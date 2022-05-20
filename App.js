@@ -1,5 +1,12 @@
 import * as React from "react";
-import { Appbar, Avatar, Headline, Button, Card, Title, Paragraph, Divider, BottomNavigation, Text, } from "react-native-paper";
+import {
+  Appbar,
+  Avatar,
+  Headline,
+  Card,
+  Title,
+  Paragraph,
+} from "react-native-paper";
 import { View, StyleSheet } from "react-native";
 import BottomNav from "./BottomNav";
 
@@ -18,7 +25,6 @@ const MyComponent = () => {
       <Headline style={styles.headline}>Home</Headline>
 
       <Card style={styles.card}>
-        
         <Card.Content>
           <Paragraph style={styles.paragraph}>26 Mai 2021</Paragraph>
           <View style={styles.view}>
@@ -27,7 +33,6 @@ const MyComponent = () => {
               source={require("./assets/marche.png")}
               style={styles.cover}
             />
-
           </View>
           <View style={styles.view}>
             <Title style={{ fontSize: 15 }}>Distance</Title>
@@ -40,7 +45,6 @@ const MyComponent = () => {
         </Card.Content>
       </Card>
       <Card style={styles.card}>
-        
         <Card.Content>
           <Paragraph style={styles.paragraph}>23 Mai 2021</Paragraph>
           <View style={styles.view}>
@@ -61,7 +65,6 @@ const MyComponent = () => {
         </Card.Content>
       </Card>
       <Card style={styles.card}>
-        
         <Card.Content>
           <Paragraph style={styles.paragraph}>20 Mai 2021</Paragraph>
           <View style={styles.view}>
@@ -70,7 +73,6 @@ const MyComponent = () => {
               source={require("./assets/marche.png")}
               style={styles.cover}
             />
-
           </View>
           <View style={styles.view}>
             <Title style={{ fontSize: 15 }}>Distance</Title>
@@ -82,7 +84,9 @@ const MyComponent = () => {
           </View>
         </Card.Content>
       </Card>
-      <Appbar><BottomNav style={styles.bNav}></BottomNav></Appbar>
+      <Appbar>
+        <BottomNav style={styles.bNav}></BottomNav>
+      </Appbar>
     </View>
   );
 };
